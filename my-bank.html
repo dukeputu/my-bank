@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1 class="text-center text-purple-500 text-5xl font-bold">Let's get some <span
+                class="text-purple-700">Moooooney</span> !!!</h1>
+        <div class="grid grid-cols-3 gap-4 mt-20 w-3/4 mx-auto ">
+            <div class="bg-green-500 text-white py-10 pl-8 rounded-3xl text-4xl font-semibold">
+                <h2 class="mb-3">Deposit</h2>
+                <h3 class="">$<span id="deposit">5</span></h3>
+            </div>
+            <div class="bg-red-500 text-white py-10 pl-8 rounded-3xl text-4xl font-semibold">
+                <h2 class="mb-3">Withdraw</h2>
+                <h3 class="">$<span id="withdraw">10</span></h3>
+            </div>
+            <div class="bg-purple-400 text-white py-10 pl-8 rounded-3xl text-4xl font-semibold">
+                <h2 class="mb-3">Blanes</h2>
+                <h3 class="">$<span id="blanes">1200</span></h3>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-20 w-3/4 mx-auto mb-10">
+            <div class="bg-green-500 py-10 pl-8 rounded-3xl  font-semibold">
+                <h4 class="mb-3 text-white text-3xl">Please Deposit</h4>
+
+                <input type="text" name="" id="deposit-amount" class=" my-3 mx-3 rounded-xl py-2 px-4"
+                    placeholder="Please Enter Deposit amount">
+                <br>
+                <button class="p-4 bg-purple-600 text-white rounded-xl hover:bg-purple-900 mt-2"
+                    id="deposit-button">Deposit</button>
+            </div>
+            <div class="bg-red-500 py-10 pl-8 rounded-3xl  font-semibold">
+                <h4 class="mb-3 text-white text-3xl">Please Withdraw</h4>
+
+                <input type="text" name="" id="withdraw-amount" class=" my-3 mx-3 rounded-xl py-2 px-4"
+                    placeholder="Please Enter Withdraw amount">
+                <br>
+                <button class="p-4 bg-purple-600 text-white rounded-xl hover:bg-purple-900 mt-2"
+                    id="withdeaw-button">Withdraw</button>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="utilties.js"></script>
+    <script src="fuction.js"></script>
+    
+    <!-- <script src="bank.js"></script>   this code also working -->
+</body>
+
+</html>
